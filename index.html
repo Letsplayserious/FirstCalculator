@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="flex-wrapper">
         <div class="calculator-content">
@@ -20,7 +23,8 @@
                                 <input type="number" id="total-cost" value="0">
                             </div>
                             <div class="input">
-                                <input type="range" min="0" max="10000000" id="total-cost-range" value="0">
+                                <input type="range" min="0" max="10000000" id="total-cost-range" value="0"
+                                    class="input-range">
                             </div>
                             <div class="input-wrapper">
                                 <div class="title">Первоначальный взнос</div>
@@ -28,12 +32,13 @@
                                     <input type="number" id="an-initial-fee" value="0">
                                 </div>
                                 <div class="input">
-                                    <input type="range" min="0" max="10000000" id="an-initial-fee-range" value="0">
+                                    <input type="range" min="0" max="10000000" id="an-initial-fee-range" value="0"
+                                        class="input-range">
                                 </div>
                                 <div class="input-wrapper">
                                     <div class="title">Срок кредита</div>
                                     <div class="input">
-                                        <input type="number" id="credit-term" value="0"> 
+                                        <input type="number" id="credit-term" value="0">
                                     </div>
                                     <div class="input">
                                         <input type="range" min="0" max="20" id="credit-term-range" class="input-range">
@@ -76,7 +81,7 @@
                         </div>
                         <div class="final-result-item">
                             <div class="title">Рекомендуемый доход</div>
-                            <div class="value" id="amount-of-advisable-amount">0<span>P</span></div>
+                            <div class="value" id="advisable-amount">0<span>P</span></div>
                         </div>
                     </div>
                 </div>
@@ -85,4 +90,5 @@
     </div>
     <script src="script/script.js"></script>
 </body>
+
 </html>
